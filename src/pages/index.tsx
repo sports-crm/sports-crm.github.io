@@ -1,4 +1,5 @@
 import * as React from "react"
+import {CSSProperties} from "react";
 
 // styles
 const pageStyles = {
@@ -28,13 +29,13 @@ const listStyles = {
   marginBottom: 96,
   paddingLeft: 0,
 }
-const listItemStyles = {
-  fontWeight: "300",
+const listItemStyles: CSSProperties = {
+  fontWeight: 300,
   fontSize: "24px",
   maxWidth: "560px",
 }
 
-const linkStyle = {
+const linkStyle: CSSProperties = {
   color: "#8954A8",
   fontWeight: "bold",
   fontSize: "16px",
