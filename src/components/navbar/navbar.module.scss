@@ -1,0 +1,19 @@
+@import '~bulma/sass/utilities/all';
+@import '~bulma/sass/components/navbar';
+@import '~bulma/sass/helpers/position';
+@import '~bulma/sass/helpers/typography';
+
+.navbar {
+  @extend .navbar;
+  position: absolute;
+  width: 100%
+}
+
+.logo {
+  @extend .navbar-item;
+
+  padding: unset;
+  img {
+    max-height: 3.25rem;
+  }
+}

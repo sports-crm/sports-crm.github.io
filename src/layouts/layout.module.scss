@@ -1,0 +1,11 @@
+@import "~bulma/sass/elements/container";
+
+.default-layout {
+  @extend .container;
+  min-height: 100vh;
+
+  &__content {
+    padding-top: 3.25rem;
+    padding-bottom: 12.5rem;
+  }
+}

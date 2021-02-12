@@ -1,0 +1,15 @@
+$footer-padding: 3rem 1.5rem 3rem;
+
+@use "~bulma/sass/utilities/all";
+@use "~bulma/sass/layout/footer";
+@use "~bulma/sass/helpers/typography";
+
+
+.footer {
+  @extend .footer;
+  position: absolute;
+  padding: $footer-padding;
+  bottom: 0;
+  width: 100%;
+  max-height: 6.5rem
+}

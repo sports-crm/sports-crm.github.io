@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "sports-crm.github.io",
+    siteUrl: "https://sports-crm.github.io"
   },
   plugins: [
     "gatsby-plugin-sass",
