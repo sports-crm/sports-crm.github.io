@@ -3,7 +3,7 @@ import {FunctionComponent, PropsWithChildren} from "react";
 
 import {Footer, Navbar} from '../components';
 
-import styles from './layout.module.scss';
+import * as styles from './layout.module.scss';
 
 export const DefaultLayout: FunctionComponent<PropsWithChildren<{}>> = ({children}) => {
     return <div className={styles.defaultLayout}>

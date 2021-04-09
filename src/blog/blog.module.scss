@@ -1,0 +1,13 @@
+@import '~bulma/sass/utilities/all';
+
+@import '~bulma/sass/grid/columns';
+@import "~bulma/sass/components/card";
+@import '~bulma/sass/elements/content';
+@import '~bulma/sass/elements/title';
+@import '~bulma/sass/helpers/color';
+@import '~bulma/sass/layout/section';
+
+.content {
+  @extend .content;
+  color: $text;
+}

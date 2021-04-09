@@ -2,7 +2,7 @@ import * as React from "react";
 
 import {DefaultLayout} from "../../layouts";
 
-import styles from "../index.module.scss";
+import * as styles from "../index.module.scss";
 
 export default () => {
     return <DefaultLayout>

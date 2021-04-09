@@ -1,0 +1,7 @@
+{
+  "name": "@sprots-crm/gatsby-transformer-blogpost",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alex Miller",
+  "license": "MIT"
+}

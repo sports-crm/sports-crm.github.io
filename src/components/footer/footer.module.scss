@@ -1,9 +1,11 @@
 $footer-padding: 3rem 1.5rem 3rem;
 
 @use "~bulma/sass/utilities/all";
+
 @use "~bulma/sass/layout/footer";
 @use "~bulma/sass/helpers/typography";
 
+@import "~bulma/sass/elements/content";
 
 .footer {
   @extend .footer;
