@@ -1,0 +1,48 @@
+name: publish-github-pages-site
+on:
+  push:
+    branches: main
+
+jobs:
+  publish_site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install npm packages
+        run: npm install
+      - name: Map public folder to github-page branch
+        run: |
+          rm -rf public
+          git worktree add -f public github-pages
+
+        shell: bash
+
+      - name: Clear exisiting site
+        run: |
+          for file in $(git ls-files)
+          do
+            rm $file
+          done
+
+        shell: bash
+        working-directory: ./public
+
+      - name: Build Site
+        run: npm run build
+
+      - name: Commit SIte
+        run: |
+          git config user.name "$(git show -s --format='%an' $GITHUB_SHA)"
+          git config user.email "$(git show -s --format='%ae' $GITHUB_SHA)"
+
+          git add -f -A .
+          git commit -m "Publish commit, $GIHUB_SHA"
+          git push origin
+
+        shell: bash
+        working-directory: ./public
