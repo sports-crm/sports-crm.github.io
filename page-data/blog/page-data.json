@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-blog-index-tsx","path":"/blog/","result":{"pageContext":{}},"staticQueryHashes":[]}
+{"componentChunkName":"component---src-blog-blog-list-tsx","path":"/blog","result":{"data":{"allBlogPost":{"edges":[{"node":{"author":"Alex Miller","publicationDate":"2021-02-28","slug":"/blog/The Site","title":"The Site","excerpt":"\nWelcome to first blog post describing the development and evolution of Sports CRM. In this post we describe the initial \nGitHub pages site.\n\n"}}]}},"pageContext":{}},"staticQueryHashes":[]}

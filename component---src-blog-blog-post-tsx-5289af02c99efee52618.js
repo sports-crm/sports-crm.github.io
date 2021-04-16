@@ -1,0 +1,2 @@
+(self.webpackChunksports_crm_github_io=self.webpackChunksports_crm_github_io||[]).push([[578],{6808:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return o}});var r=n(7294),u=n(7019),s=n(1781),c=n(5061),l=n.n(c),a=n(1987);function o(e){var t=e.data.blogPost;return r.createElement(a.H,null,r.createElement("main",null,r.createElement("h1",null,t.title),l()().use(u).use(s).processSync(t.rawMarkdownBody).contents))}}}]);
+//# sourceMappingURL=component---src-blog-blog-post-tsx-5289af02c99efee52618.js.map
